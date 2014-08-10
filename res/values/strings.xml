@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐帮团</string>
+	
+    <!--		basic text ->		-->
+    <string name="txt_name">用户名</string>
+    <string name="txt_pwd">密码</string>
+    <string name="txt_pwd_confirm">确认密码</string>
+    <string name="txt_phone">手机号码</string>
+    <string name="txt_province">省份</string>
+    <string name="txt_city">城市</string>
+    <string name="txt_province_and_city">省份 / 城市</string>
+    <string name="txt_email">电子邮箱</string>
+    
+    <string name="txt_login">登录</string>
+    <string name="txt_loginnow">下一步</string>
+    
+    <string name="txt_birth_year">出生年份</string>
+    
+    <string name="txt_next">下一步</string>
+    
+    <string name="txt_confirm">确认</string>
+    <!-- 취소 -->	<!-- 확인필요 -->
+    <string name="txt_cancel">取消</string>
+    <!-- 화폐 단위 --><!-- 확인필요 -->
+    <string name="txt_monetary_unit">元</string>
+    <!--		basic text <-		-->
+    
+    
+    
+    
+    
+    <!--		mypage text ->		-->
+    <string name="mypage_title">用户中心</string>
+    <string name="mypage_stitle">My Page</string>
+    <string name="mypage_mypoint">您的积分为</string>
+    
+    <string name="mypage_grade">会员等级</string>
+    
+    <string name="mypage_credit">积分使用记录</string>
+    
+    <string name="mypage_modify_email">修改 电子邮箱</string>
+    <string name="mypage_modify_birthday_gender">修改  出生年份 / 性别</string>
+    <string name="mypage_modify_residence">修改 省份 / 城市</string>
+    <string name="mypage_modify_phone">修改 手机号码</string>
+    <string name="mypage_modify_pwd">修改 密码 </string>
+    <!--		mypage text <-		-->
+    
+    
+    
+    
+    <!--		modify text ->		-->
+    <string name="txt_previous_email">旧 电子邮箱</string>
+    <string name="txt_new_email">新电子邮箱</string>
+    <string name="txt_previous_phone">旧 手机号码</string>
+    <string name="txt_new_phone">新手机号码</string>
+    <string name="txt_previous_pwd">旧密码</string>
+    <string name="txt_new_pwd">新密码</string>
+    
+    <string name="txt_modify">修改</string>
+    
+    <string name="modify_title_email">修改 电子邮箱</string>
+    <string name="modify_title_phone">修改 手机号码</string>
+    <string name="modify_title_birth_gender">修改 出生年份 / 性别</string>
+    <string name="modify_title_location">修改 省份 / 城市</string>
+    <string name="modify_title_pwd">修改 密码</string>
+    
+    <!-- 기존 암호가 틀렸습니다. -->	<!-- 확인필요 -->
+    <string name="modify_msg_wrong_prev_pwd">现有的密码是错误的。</string>
+    
+    <!-- 변경이 완료되었습니다. -->
+    <string name="modify_msg_modify_complete">的修改已经完成。</string>
+    <!--		modify text <-		-->
+    
+    
+    
+    <!--		product text ->		-->
+    <string name="product_show_detail">查 看 详 情</string>
+    <string name="product_sold">已售出</string>
+    <string name="product_enddate">销售结束</string>
+    <string name="product_friend_notify_head">发送给朋友  奖励</string>
+    <string name="product_friend_notify_tail">元</string>
+    <string name="product_friend_buy_head">转发购买成功  奖励</string>
+    <string name="product_friend_buy_tail">%</string>
+    
+    <string name="product_msg_more_item_loading">waiting...</string>
+	
+    
+    <!-- 친구에게 추천하기 -->
+    <string name="product_detail_btn_notify_friend">推荐给朋友.</string>
+    <!--		product text <-		-->
+    
+    
+    
+    
+    <!--		join ->		-->
+    <string name="join_title">免费注册</string>
+    <string name="join_msg_complete">已完成注册。</string>
+    <string name="join_btn_complete">确定</string>
+    <string name="join_btn_pwd_complete">确定</string>
+    
+    <!-- 사용자 이름을 입력해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_id_empty">请输入您的用户名。</string>
+    
+    <!-- 아이디 중복. -->	<!-- 확인필요 -->
+    <string name="join_msg_id_exist">ID存在。</string>
+    
+    <!-- 사전에 등록된 회원만 가입이 가능합니다. -->	<!-- 확인필요 -->
+    <string name="join_msg_not_register">只有注册用户才可以加入。</string>
+   
+    <!-- 지역을 선택해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_address_empty">请选择一个区域。</string>
+    
+    <!-- 전화번호를 정확하게 입력해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_phone_wrong">请输入正确的手机号码。</string>
+    
+    <!-- 전화번호를 입력해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_phone_empty">请输入电话号码。</string>
+    
+    <!-- 암호가 일치하지 않습니다. -->	<!-- 확인필요 -->
+    <string name="join_msg_pwd_mismatch">密码不匹配。</string>
+    <!-- 암호를 입력해 주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_pwd_empty">请输入密码。</string>
+    <!-- 암호는 6글자 이상이어야 합니다. -->	<!-- 확인필요 -->
+    <string name="join_msg_pwd_wrong">密码必须至少6个字符。</string>
+    
+    <!-- 이메일을 입력해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_email_empty">请输入您的E-mail。</string>
+    <!-- 이메일이 잘못되었습니다. -->	<!-- 확인필요 -->
+    <string name="join_msg_email_wrong">电子邮件是无效的。</string>
+    
+    <!-- 성별을 선택해주세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_gender_empty">请选择一个性别。</string>
+    
+    <!-- 출생년도를 입력하세요. -->	<!-- 확인필요 -->
+    <string name="join_msg_byear_empty">输入你的出生年份。</string>
+    
+    <!-- 입력하신 정보를 확인해주세요.  -->	<!-- 확인필요 -->
+    <string name="join_msg_input_mismatch">请检查您输入的信息。</string>
+    
+    
+    <!--		join <-		-->
+    
+    
+    <!--		login ->		-->
+    <string name="login_title">请登录</string>
+    <!-- 일치하는 정보가 없습니다. (로그인 시 입력정보 오류일 경우)--><!-- 확인필요 -->
+    <string name="login_msg_wrong_input">没有匹配的信息。</string>
+    <!--		login <-		-->
+    
+    
+    
+    <!--		webview title ->		-->
+    <!-- 주문내역 -->
+    <string name="webview_title_myorders">请登录</string>
+    <!-- 공지사항 -->
+    <string name="webview_title_notice">通知(启事)</string>
+    <!-- 제품 상세보기 -->
+    <string name="webview_title_product_detail">乐帮团</string>
+    <!-- 적립금 적립내역 -->
+    <string name="webview_title_point_history">적립금 적립내역</string>
+    <!--		webview title <-		-->
+    
+    
+    
+    <!--		menu ->		-->
+    <string name="menu_home">乐帮团</string>
+    <string name="menu_myorders">我的订单</string>
+    <string name="menu_mypage">个人中心</string>
+    <string name="menu_notice">公告/动态</string>
+    <string name="menu_logout">退出</string>
+    <string name="menu_help">帮助中心</string>
+    
+    
+    <string name="menu_category">Category</string>
+    <!-- 카테고리 전체보기 --><!-- 확인필요 -->
+    <string name="menu_category_show_all">查看全部</string>
+    <!--		menu <-		-->
+    
+    
+    <!--		msg ->		-->
+    <string name="msg_loading">waiting...</string>
+    <!-- 네트워크 오류 -->	<!-- 확인필요 -->
+    <string name="network_error_title">网络错误</string>
+    <!-- 네트워크 연결상태를 확인해주세요. -->	<!-- 확인필요 -->
+    <string name="network_error_msg">请检查网络连接状态。</string>
+    <!-- 종료하시겠습니까? -->	<!-- 확인필요 -->
+    <string name="msg_ask_exit">你想这个应用程序退出?</string>
+    <!-- 종료 -->	<!-- 확인필요 -->
+    <string name="txt_exit">结束</string>
+    
+    <!--		msg <-		-->
+    
+    
+    <!--		Logout ->		-->
+    <!-- 로그아웃 하시겠습니까? -->	<!-- 확인필요 -->
+    <string name="logout_alert_msg">将你现在注销？</string>
+    <!-- 로그아웃 확인 -->	<!-- 확인필요 -->
+    <string name="logout_alert_ok">注销 </string>
+    <!-- 취소 -->	<!-- 확인필요 -->
+    <string name="logout_alert_cancel">取消</string>
+    
+    <!--		Logout <-		-->
+    
+    
+    <!--		WeChat ->		-->
+    <!-- 로그아웃 하시겠습니까? -->	<!-- 확인필요 -->
+    <string name="wechat_alert_msg_need_install">需要安装微信</string>
+    <!-- 로그아웃 확인 -->	<!-- 확인필요 -->
+    <string name="wechat_install">安装</string>
+    <!-- 취소 -->	<!-- 확인필요 -->
+    <string name="wechat_install_cancel">取消</string>
+    
+    <!--		WeChat <-		-->
+    
+    
+</resources>

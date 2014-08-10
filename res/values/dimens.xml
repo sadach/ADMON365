@@ -1,0 +1,11 @@
+<resources>
+	
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">25dp</dimen>
+    
+    
+    <dimen name="list_padding">10dp</dimen>
+    
+    <color name="menu_divider_light_color">#88626262</color>
+    <color name="menu_divider_dark_color">#88121212</color>
+</resources>

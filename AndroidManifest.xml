@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.covas.admon.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+	
+    
+    <!-- -> GCM 관련 퍼미션 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission 
+        android:name="com.covas.admon.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.covas.admon.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<!-- <- GCM 관련 퍼미션--> 
+	
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    
+    
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:clearTaskOnLaunch="true"
+        android:label="@string/app_name"
+        android:launchMode="standard"
+        android:screenOrientation="portrait" 
+        android:theme="@android:style/Theme.Light.NoTitleBar" 
+        android:configChanges="orientation|screenSize|keyboardHidden"  >
+        <activity
+            android:name="com.covas.admon.android.MainAct"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <!-- GCM 관련 리시버, 서비스 -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.covas.admon.android" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService" />
+    	<!-- GCM 관련 리시버, 서비스 -->
+        
+        
+        <activity android:name="com.covas.admon.android.begin.Intro" 						android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.begin.BeginMain" 				android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.begin.BeginAct" 					android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.begin.LoginAct" 					android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_ID" 					android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_phone" 				android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_age" 				android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_address" 			android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_email" 				android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.join.JoinAct_pwd" 				android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        
+        <!-- mypage -->
+        <activity android:name="com.covas.admon.android.mypage.MyPageAct_Main"	 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.mypage.ModifyAct_address" 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.mypage.ModifyAct_age"	 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.mypage.ModifyAct_email"	 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.mypage.ModifyAct_phone"	 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.mypage.ModifyAct_pwd"	 	android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        
+        
+        
+        <activity android:name="com.covas.admon.android.help.Help"				 			android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        
+        <activity android:name="com.covas.admon.android.web.BuyInfoAct"	 				android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.web.NoticeAct"	 				android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.web.PointInfoAct"	 			android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        <activity android:name="com.covas.admon.android.web.ProductDetailAct"			android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|screenSize|keyboardHidden" android:screenOrientation="portrait" />
+        
+        <!-- WeChat -->
+        <activity android:name=".wxapi.WXEntryActivity" android:launchMode="standard" android:label="@string/app_name" android:exported="true" />
+        
+    </application>
+    
+    
+    
+
+</manifest>

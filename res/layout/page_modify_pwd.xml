@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/join_bg_inner_small"
+            android:orientation="vertical" >
+
+            <TextView 
+                style="@style/mypage_stitle"
+            	android:text="@string/mypage_stitle" />
+            
+            <TextView 
+                style="@style/mypage_txt_property"
+            	android:text="@string/txt_previous_pwd" />
+			
+            <EditText
+                android:id="@+id/join_etv_pwd"
+                style="@style/join_etv"
+                android:hint="@string/txt_previous_pwd"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp" />
+            
+            <TextView 
+                style="@style/mypage_txt_property"
+            	android:text="@string/txt_new_pwd" />
+            
+            <EditText
+                android:id="@+id/join_etv_pwd2"
+                style="@style/join_etv"
+                android:hint="@string/txt_new_pwd"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp" />
+            
+            <TextView 
+                style="@style/mypage_txt_property"
+            	android:text="@string/txt_pwd_confirm" />
+            
+            <EditText
+                android:id="@+id/join_etv_pwd3"
+                style="@style/join_etv"
+                android:hint="@string/txt_pwd_confirm"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp" />
+            
+            <Button
+                android:id="@+id/join_btn_next"
+                style="@style/join_btn_basic"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/txt_modify" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mypage_top_bg" />
+    </FrameLayout>
+
+</LinearLayout>

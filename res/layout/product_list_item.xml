@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="8dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/product_iv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:background="@drawable/product_item_image_area" />
+
+            <ImageView
+                android:id="@+id/product_iv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/product_item_top_bg" />
+
+            <TextView
+                android:id="@+id/product_item_tv_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:text="已售出 : 24"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_item_tv_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:text="销售结束 : 2013-06-20"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+            
+            <ProgressBar
+                android:id="@+id/product_item_pb_loading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/product_item_tv_title"
+            style="@style/limited_text_marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:text="正官庄高丽参高端养生套组(粉+胶囊)"
+            android:textColor="#000000"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/product_item_tv_discount_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="70%"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/product_item_bg_discount_small" />
+
+            <TextView
+                android:id="@+id/product_item_tv_desc"
+                style="@style/limited_text_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="正官庄高丽参高端养生套组"
+                android:textColor="#666666"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/product_item_tv_discount_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:drawableRight="#00000000"
+                android:drawablePadding="20dp"
+                android:text="70%"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/product_item_bg_discount_big" />
+
+            <Button
+                android:id="@+id/product_item_btn_show_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/product_item_btn_show_detail"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="查 看 详 情"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/product_item_btn_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_item_btn_bottom_left"
+            android:drawablePadding="30dp"
+            android:drawableTop="#00000000"
+            android:text="向好友推荐 奖励100元"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#555555"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/product_item_btn_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_item_btn_bottom_right"
+            android:drawablePadding="30dp"
+            android:drawableTop="#00000000"
+            android:text="朋友购买 5%利益分红"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#555555"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/product_iv_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_item_shadow" />
+    
+    
+</LinearLayout>

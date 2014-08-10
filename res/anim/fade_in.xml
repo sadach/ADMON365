@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+=====================================================================================
+	(에니메이션) fade in 
+	
+	=================================================================================
+	@see	
+	@since	1.2.1
+	=================================================================================
+	History
+		1.2.1	2011-11-28	조은상	Initial Version
+ ====================================================================================
+ -->
+<alpha 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0"
+    android:duration="500"
+/>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/join_bg_inner"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/mypage_stitle"
+                android:text="@string/mypage_stitle" />
+
+            <TextView
+                style="@style/mypage_txt_property"
+                android:text="@string/txt_name" />
+
+            <TextView
+                android:id="@+id/mypage_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textColor="#b30100"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#d7d7d7" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/mypage_mypoint" />
+
+                <TextView
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/mypage_tv_mypoint"
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#b30100"
+                    android:text="" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mypage_btn_credit"
+                style="@style/join_btn_basic"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="@string/mypage_credit" />
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/mypage_grade" />
+
+                <TextView
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/mypage_tv_mygrade"
+                    style="@style/mypage_txt_property"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#b30100"
+                    android:text="" />
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#d7d7d7" />
+            
+            <Button
+                android:id="@+id/mypage_btn_email"
+                style="@style/mypage_btn_basic"
+                android:layout_marginTop="15dp"
+                android:text="@string/mypage_modify_email" />
+            
+            <Button
+                android:id="@+id/mypage_btn_birthday_gender"
+                style="@style/mypage_btn_basic"
+                android:layout_marginTop="6dp"
+                android:text="@string/mypage_modify_birthday_gender" />
+            
+            <Button
+                android:id="@+id/mypage_btn_residence"
+                style="@style/mypage_btn_basic"
+                android:layout_marginTop="6dp"
+                android:text="@string/mypage_modify_residence" />
+            
+            <Button
+                android:id="@+id/mypage_btn_phone"
+                style="@style/mypage_btn_basic"
+                android:layout_marginTop="6dp"
+                android:text="@string/mypage_modify_phone" />
+            
+            <Button
+                android:id="@+id/mypage_btn_pwd"
+                style="@style/mypage_btn_basic"
+                android:layout_marginTop="6dp"
+                android:text="@string/mypage_modify_pwd" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mypage_top_bg" />
+    </FrameLayout>
+
+</LinearLayout>
