@@ -7,12 +7,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.BitmapFactory.Options;
 import android.net.Uri;
-import android.util.DisplayMetrics;
 
 import com.covas.admon.android.R;
 import com.covas.admon.android.dao.User;
@@ -23,6 +20,7 @@ import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.tencent.mm.sdk.openapi.WXMediaMessage;
+import com.tencent.mm.sdk.openapi.WXTextObject;
 import com.tencent.mm.sdk.openapi.WXWebpageObject;
 
 /** 설명 
@@ -72,17 +70,18 @@ public class WeChatMgr
 			return;
 		}
 		
-		WXMediaMessage msg = new WXMediaMessage();
 		
 		
+		
+		WXWebpageObject webpage = new WXWebpageObject();
 		
 		if( url != "" && url != null ){
 			
-			WXWebpageObject webpage = new WXWebpageObject();
 			webpage.webpageUrl = url;
 			
-			msg.mediaObject = webpage;
+			
 		}
+		WXMediaMessage msg = new WXMediaMessage(webpage);
 		
 		msg.title = title;
 		msg.description = desc;
@@ -104,6 +103,8 @@ public class WeChatMgr
 		
 		//api.unregisterApp();
 		//if( requestResult == false && api.isWXAppInstalled() == false ) showAppStore( context );
+		
+		 
 	}
 	
 	private static void showNeedInstallAlert( final Context context ){

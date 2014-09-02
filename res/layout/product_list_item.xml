@@ -38,7 +38,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="4dp"
-                android:text="已售出 : 24"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textAppearance="@android:style/TextAppearance.Small"
                 android:textStyle="bold" />
@@ -141,7 +141,7 @@
                 android:layout_marginRight="7dp"
                 android:background="@drawable/product_item_btn_show_detail"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:text="查 看 详 情"
+                android:text="@string/product_show_detail"
                 android:textColor="#555555"
                 android:textStyle="bold" />
         </LinearLayout>

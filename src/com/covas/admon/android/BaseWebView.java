@@ -58,7 +58,7 @@ public class BaseWebView extends WebView {
 		// webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN);
 		setVerticalScrollbarOverlay(true);
 
-		getSettings().setPluginState(null);
+		//getSettings().setPluginState(null);
 		
 		addJavascriptInterface(new BaseJavaScriptInterface(), JAVA_SCRIPT_TARGET);
 		

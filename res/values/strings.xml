@@ -76,7 +76,7 @@
     
     
     <!--		product text ->		-->
-    <string name="product_show_detail">查 看 详 情</string>
+    <string name="product_show_detail">加入购物车</string>
     <string name="product_sold">已售出</string>
     <string name="product_enddate">销售结束</string>
     <string name="product_friend_notify_head">发送给朋友  奖励</string>
@@ -167,7 +167,7 @@
     <!--		menu ->		-->
     <string name="menu_home">乐帮团</string>
     <string name="menu_myorders">我的订单</string>
-    <string name="menu_mypage">个人中心</string>
+    <string name="menu_mypage">账户管理</string>
     <string name="menu_notice">公告/动态</string>
     <string name="menu_logout">退出</string>
     <string name="menu_help">帮助中心</string>

@@ -21,7 +21,8 @@
     <style name="mypage_btn_basic">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_gravity">bottom|left</item>
+        <item name="android:gravity">left</item>
         <item name="android:background">@drawable/mypage_btn_basic</item>
         <item name="android:textColor">#444444</item>
         <item name="android:textSize">20sp</item>

@@ -98,6 +98,7 @@ public class ProductListAdepter extends ArrayAdapter<Product> implements OnClick
 		int dcRate = Integer.parseInt(product.discountRate) + Integer.parseInt(product.getGradeDcRate(app.getUser().degree));
 		
 		String discountTxt = dcRate+"%";
+		String salePrice = "¥" + product.salePrice;
 		
 		String adFee = product.getGradeAdFee(app.getUser().degree);
 		String rewardRate = product.getGradeRewardRate(app.getUser().degree);
@@ -127,12 +128,12 @@ public class ProductListAdepter extends ArrayAdapter<Product> implements OnClick
 		holder.btnPercentage.setTag(position);
 		
 		
-		holder.tvSold.setText(soldTxt);
+		//holder.tvSold.setText(soldTxt);
 		holder.tvEndDate.setText(endDateTxt);
 		holder.tvTitle.setText(titleTxt);
 		holder.tvDesc.setText(descTxt);
 		holder.tvDiscountS.setText(discountTxt);
-		holder.tvDiscountB.setText(discountTxt);
+		holder.tvDiscountB.setText(salePrice);
 		
 		//holder.btnPoint.setText(btnPointText);
 		//holder.btnPercentage.setText(btnBuyRewardText);
