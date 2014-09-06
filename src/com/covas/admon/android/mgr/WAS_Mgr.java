@@ -17,7 +17,7 @@ import com.covas.admon.android.util.Utils;
 public class WAS_Mgr {
 	
 	//public static final String BASE_URL = "http://175.45.163.1:7575/";
-	public static final String BASE_URL = "http://admon365.com/";
+	public static final String BASE_URL = "http://hmgmkt.cn/";
 	
 	public static final String BASE_WEB_SERVICE = BASE_URL+"hmgAppSvc.asmx/";
 	
