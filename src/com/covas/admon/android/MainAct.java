@@ -2,6 +2,7 @@ package com.covas.admon.android;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import cn.jpush.android.api.JPushInterface;
 
 import com.covas.admon.android.base.HeaderSlideMenuActivity;
 import com.covas.admon.android.product.ProductListWrapper;
@@ -17,6 +18,24 @@ public class MainAct extends HeaderSlideMenuActivity {
 		App app = (App) getApplicationContext();
 		app.initialize();
 		super.onCreate(savedInstanceState);
+				
+		//JPushInterface.setDebugMode(true);
+		
+	}
+	
+	public void onPause()
+	{
+		super.onPause();
+		JPushInterface.onPause(this);
+		
+	}
+	
+	
+	@Override
+	public void onResume()
+	{
+		super.onResume();
+		JPushInterface.onResume(this);
 	}
 	
 	

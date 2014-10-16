@@ -15,6 +15,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.Log;
 import android.widget.Toast;
+import cn.jpush.android.api.JPushInterface;
 
 import com.covas.admon.android.mgr.Pref_mgr;
 import com.covas.admon.android.mgr.WAS_Mgr;
@@ -49,7 +50,13 @@ public class GCMIntentService extends GCMBaseIntentService {
     public static void init(Context context){
     	
     	Log.d("gcm", "gcm init()!!!");
-    	
+    	//JPushInterface.onKillProcess(context);
+        JPushInterface.init(context);
+
+        
+        Log.d("gcm" ,"현재 JPushInterface.getConnectionState : " + JPushInterface.getConnectionState(context));
+        Log.d("gcm" , "현재 JPushInterface.getRegistrationID : " + JPushInterface.getRegistrationID(context));
+
     	try{
 			GCMRegistrar.checkDevice(context);
 	        GCMRegistrar.checkManifest(context);

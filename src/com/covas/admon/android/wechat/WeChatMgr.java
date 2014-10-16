@@ -31,7 +31,7 @@ import com.tencent.mm.sdk.openapi.WXWebpageObject;
  */
 public class WeChatMgr
 {
-	private static final String App_ID = "wx2afd56e421c6bebd";
+	private static final String App_ID = "wxec50fe5beb5079d9";
 	
 	
 	private static Bitmap appIconBitmap;
